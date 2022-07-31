@@ -23,20 +23,37 @@ Requirement
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
-print(Fore.BLUE+"=" * 26)
-print(Fore.GREEN+"MERUBAH BINER KE DESIMAL >
-print(Fore.BLUE+"=" * 26)
-print(Fore.CYAN+"=" * 25)
-print(Fore.RED+"SMK RADEN PAKU X TKJ 1 |")
-print(Fore.CYAN+"=" * 25)
-b_num = list(input("MASUKAN ANGKA BINER: "))
-value = 0
+# Fungsi merubah desimal
+# ke binary
+# @andhikapratamaputra
+print(Fore.BLUE+"=" * 27)
+print(Fore.GREEN+"X TKJ 1 | SMK RADEN PAKU")
+print(Fore.RED+"RUBAH DESIMAL KE BINER")
+print(Fore.BLUE+"=" * 27)
 
-for i in range(len(b_num)):
-        digit = b_num.pop()
-        if digit == '1':
-                value = value + pow(2, i)
-print("Hasil desimal adalah :", value)
+def DecimalToBinary(num):
+
+
+
+    if num >= 1:
+
+        DecimalToBinary(num // 2)
+
+    print(num % 2, end = '')
+
+#  masukan angka
+
+if __name__ == '__main__':
+
+
+  # masukan input
+
+ dec_val  = 1305 # contoh masukan nilai / example of Decimal number
+
+
+ # manggil fungsi
+
+ DecimalToBinary(dec_val)
 
 ```
 
@@ -62,8 +79,7 @@ Cloning repo
 
 ```url
 
-git clone https://github.com/Dhikaweb7/Biner-convert-to-decimal
-
+git clone https://github.com/Dhikaweb7/Descimal-to-binary
 ```
 
 <hr>
